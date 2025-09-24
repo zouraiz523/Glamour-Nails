@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Nails - Professional Manicure Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Discount Popup -->
+    <div class="discount-popup" id="discountPopup">
+        <div class="discount-card">
+            <button class="discount-close" id="discountClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="discount-badge">30% OFF</div>
+            <h2>Special Offer Just For You!</h2>
+            <p>Get 30% off on your first visit to Glamour Nails. Contact us on WhatsApp to claim your discount and book your appointment today!</p>
+            <div>
+                <a href="https://wa.me/1234567890?text=Hi%20Glamour%20Nails%2C%20I%20would%20like%20to%20claim%20the%2030%25%20discount%20and%20book%20an%20appointment" class="btn" target="_blank">Claim on WhatsApp</a>
+                <button class="btn" id="discountLater">Maybe Later</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fas fa-spa"></i> Glamour Nails</a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="carousel">
+            <div class="carousel-slides" id="carouselSlides">
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')">
+                    <div class="slide-content">
+                        <h1>Experience Luxury Nail Care</h1>
+                        <p>Transform your nails with our premium manicure and nail art services. Our skilled artists create stunning designs that reflect your unique style.</p>
+                        <a href="#contact" class="btn">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')">
+                    <div class="slide-content">
+                        <h1>Premium Nail Art Designs</h1>
+                        <p>From elegant French tips to intricate nail art, we bring your vision to life with precision and creativity.</p>
+                        <a href="#gallery" class="btn">View Gallery</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80')">
+                    <div class="slide-content">
+                        <h1>Relaxing Spa Experience</h1>
+                        <p>Pamper yourself with our luxurious spa manicures that include exfoliation, massage, and hydrating treatments.</p>
+                        <a href="#services" class="btn">Our Services</a>
+                    </div>
+                </div>
+                <div class="carousel-slide video-slide">
+                    <div class="video-container">
+                        <video autoplay muted loop>
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-getting-a-manicure-43763-large.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="slide-content">
+                        <h1>Watch Our Process</h1>
+                        <p>See how our skilled technicians create beautiful nail designs with precision and care.</p>
+                        <a href="#videos" class="btn">More Videos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators" id="carouselIndicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of nail services to keep your hands looking beautiful</p>
+        </div>
+        <div class="services-grid" id="servicesGrid">
+            <!-- Service cards will be added here by JavaScript -->
+        </div>
+        <div class="load-more">
+            <button class="btn" id="loadMoreBtn">Load More Services</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="section-title">
+            <h2>Nail Art Gallery</h2>
+            <p>Explore our stunning nail art designs created by our talented artists</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section video-section" id="videos">
+        <div class="section-title">
+            <h2>Nail Art Tutorials</h2>
+            <p>Watch our artists create amazing nail designs</p>
+        </div>
+        <div class="video-container">
+            <div class="video-scroll" id="videoScroll">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <iframe src="https://www.tiktok.com/embed/v2/7123456789012345678" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>French Tips Tutorial</h3>
+                        <p>Learn the perfect French manicure technique</p>
+                    </div>
+                    <div class="video-controls">
+                        <button class="video-control-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="video-control-btn">
+                            <i class="fas fa-comment"></i>
+                        </button>
+                        <button class="video-control-btn">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Add more video items with different TikTok embeds -->
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <iframe src="https://www.tiktok.com/embed/v2/7123456789012345679" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Nail Art Design</h3>
+                        <p>Creating stunning flower patterns</p>
+                    </div>
+                    <div class="video-controls">
+                        <button class="video-control-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="video-control-btn">
+                            <i class="fas fa-comment"></i>
+                        </button>
+                        <button class="video-control-btn">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Add more video items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Get in touch to book your appointment or ask any questions</p>
+        </div>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Glamour Nails</h3>
+                <p>We provide premium nail care services with the latest trends and techniques. Our mission is to make every client feel beautiful and confident.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Street, City, State 12345</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@glamournails.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Glamour Nails. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="video-scroll.js"></script>
+</body>
+</html>
